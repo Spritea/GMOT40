@@ -39,4 +39,4 @@ Although we tried to make the annotation quality as high as possible, there is s
 
 If you find any inproper label/have better annotation ideas, please contact Wensheng Cheng by Email: wenscheng at cs.stonybrook.edu.
 
-Your effort would be greatly appreciated, and the person whose improvement is adopted would be added to a contribution list.
+Your effort would be greatly appreciated, and the person whose improvement is adopted would be added to a contribution list!
