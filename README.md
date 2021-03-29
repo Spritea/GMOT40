@@ -1,5 +1,5 @@
 # GMOT-40 Benchmark
-This is the development project for paper: [GMOT-40: A Benchmark for Generic Multiple Object Tracking](https://arxiv.org/abs/2011.11858).
+This is the official development project for paper: [GMOT-40: A Benchmark for Generic Multiple Object Tracking](https://arxiv.org/abs/2011.11858).
 
 To get the dataset, including sequences and labels, please go to the [official website](https://spritea.github.io/GMOT40).
 
