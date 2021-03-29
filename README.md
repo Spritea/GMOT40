@@ -1,16 +1,14 @@
-# GMOT-40
+# GMOT-40: A Benchmark for Generic Multiple Object Tracking
 This is the development project for paper: [GMOT-40: A Benchmark for Generic Multiple Object Tracking](https://arxiv.org/abs/2011.11858).
 
-The official website, including sequences and labels, is provided [here](https://spritea.github.io/GMOT40).
+To get the dataset, including sequences and labels, please go to the [official website](https://spritea.github.io/GMOT40).
 
 <img src="sample.png">
 
 ## Abstract
-
 Multiple Object Tracking (MOT) has witnessed remarkable advances in recent years. However, existing studies dominantly request prior knowledge of the tracking target (eg, pedestrians), and hence may not generalize well to unseen categories. In contrast, Generic Multiple Object Tracking (GMOT), which requires little prior information about the target, is largely under-explored. In this paper, we make contributions to boost the study of GMOT in three aspects. First, we construct the first publicly available dense GMOT dataset, dubbed GMOT-40, which contains 40 carefully annotated sequences evenly distributed among 10 object categories. In addition, two tracking protocols are adopted to evaluate different characteristics of tracking algorithms. Second, by noting the lack of devoted tracking algorithms, we have designed a series of baseline GMOT algorithms. Third, we perform a thorough evaluations on GMOT-40, involving popular MOT algorithms (with necessary modifications) and the proposed baselines.
 
 ## Baseline
-
 Below are the results of baseline methods with one-shot GMOT protocol. We randomly
 sample the one target in the 1st frame for the protocol and repeat this procedure for 5 times. Then we report the mean and standard deviation of the results over these 5 experiments.
 
@@ -22,7 +20,6 @@ sample the one target in the 1st frame for the protocol and repeat this procedur
 | [FAMNet](https://openaccess.thecvf.com/content_ICCV_2019/papers/Chu_FAMNet_Joint_Learning_of_Feature_Affinity_and_Multi-Dimensional_Assignment_for_ICCV_2019_paper.pdf) | 17.60%	&plusmn; 0.85%  | 22.56% &plusmn; 0.23%  | 27.76%	&plusmn; 1.16%  | 
 
 ## Citation 
-
 The proceeding version would be updated when available. You may use the arXiv version for now.
 
 ```
