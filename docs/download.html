@@ -97,36 +97,6 @@
     <div class="container">
       <div class="row">
         <div class="text-left">
-          <h2>Data File Structure</h2>
-          <hr style="margin-left: 0px;width: 1100px;height:3px;border:none;border-top:3px solid red;">
-          <p class="lead">
-            The file structure of sequences with trajectory labels is shown below.
-          </p>
-          <pre style="background-color:rgb(235,235,235)"><code><span>  |-- GenericMOT_JPEG/
-            |-- airplane-0/
-            |  |-- gt/
-            |  |  |-- gt.txt
-            |  |-- img1/
-            |  |  |-- 000000.jpg
-            |  |  |   ......
-            |  |  |-- 000375.jpg
-            |   ......
-            |-- stock-3/
-            |  |-- gt/
-            |  |  |-- gt.txt
-            |  |-- img1/
-            |  |  |-- 000000.jpg
-            |  |  |   ......
-            |  |  |-- 000312.jpg</span></code></pre>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="text-left">
           <h2>Label Format</h2>
           <hr style="margin-left: 0px;width: 1100px;height:3px;border:none;border-top:3px solid red;">
           <p class="lead">
@@ -152,6 +122,41 @@
       </div>
     </div>
   </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="text-left">
+          <h2>Data File Structure</h2>
+          <hr style="margin-left: 0px;width: 1100px;height:3px;border:none;border-top:3px solid red;">
+          <p class="lead">
+            The file structure of sequences with trajectory labels is shown below.
+          </p>
+          <pre style="background-color:rgb(235,235,235)"><code><span>  |-- GenericMOT_JPEG/
+            |-- airplane-0/
+            |  |-- gt/
+            |  |  |-- gt.txt
+            |  |-- img1/
+            |  |  |-- 000000.jpg
+            |  |  |   ......
+            |  |  |-- 000375.jpg
+            |   ......
+            |-- stock-3/
+            |  |-- gt/
+            |  |  |-- gt.txt
+            |  |-- img1/
+            |  |  |-- 000000.jpg
+            |  |  |   ......
+            |  |  |-- 000312.jpg</span></code></pre>
+            <p class="lead">
+              The file structure of detection results is simple, which contains the detection results of our baseline one-shot detector for all sequences.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
