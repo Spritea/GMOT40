@@ -16,6 +16,11 @@
   <!-- Custom styles for this template -->
   <link href="css/gmot40.css" rel="stylesheet">
 
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -23,7 +28,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <!-- <a href="https://www.temple.edu/">-->
-    <img src="p1.png" height="46" class="align-baseline" alt=""
+    <img src="logo.png" height="46" class="align-baseline" alt=""
       href="http://vision.cs.stonybrook.edu/~lasot/index.html">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="index.html">
@@ -52,14 +57,154 @@
     </div>
   </nav>
 
-  <section id="about">
-    <div class="container">
+  <section>
+    <div class="container" style="margin-left: 300px;">
       <div class="row">
-        <div class="mx-auto">
-          <h2>GMOT-40 Leaderboard</h2>
-          <hr style="margin-left: 0px;width: 1100px;height:3px;border:none;border-top:3px solid red;">
+        <div class="text-left">
+          <h2>GMOT-40 Evaluation Instruction</h2>
+          <hr style="margin-left: 0px;width: 1300px;height:3px;border:none;border-top:3px solid red;">
+          <p class="lead">
+            Please check and follow instructions below for fair usage.
+            <ul>
+              <li style="line-height: 200%">
+                <font size="4"><b>No training on GMOT-40:</b> take the whole GMOT-40 dataset as a test set, and <strong>do not train</strong> on any sequence of GMOT-40. </br>
+                  This is the inherent requirement for the one-shot GMOT protocol.</br>
+                </font>
+              </li>
+              <li style="line-height: 200%">
+                <font size="4"><b>One-shot detector:</b> you are supposed to use the baseline one-shot detector provided by GMOT-40 for <strong>public track</strong> (public detector).</br>
+                  You may also use your own one-shot detector for <strong>private track</strong> (private detector). You would need to indicate this when submission.
+                </font>
+  
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="margin-left: 300px;">
+      <div class="row">
+        <div class="text-left">
+          <h2>Submission Guideline</h2>
+          <hr style="margin-left: 0px;width: 1300px;height:3px;border:none;border-top:3px solid red;">
           <p class="lead">
             Coming soon.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="margin-left: 300px;">
+      <div class="row">
+        <div class="text-left">
+          <h2>Leaderboard</h2>
+          <hr style="margin-left: 0px;width: 1300px;height:3px;border:none;border-top:3px solid red;">
+          <!-- <p class="lead">
+            The GMOT-40 leaderboard and submission instructions are shown below.
+          </p> -->
+          
+          <p>
+          <table id="public_detector" class="display">
+            <thead>
+              <tr>
+                <th>Methods</th>
+                <th>MOTA(%)</th>
+                <th>IDF1(%)</th>
+                <th>IDP(%)</th>
+                <th>IDR(%)</th>
+                <th>Rcll(%)</th>
+                <th>Prcn(%)</th>
+                <th>MT</th>
+                <th>PT</th>
+                <th>ML&darr;</th>
+                <th>FP&darr;</th>
+                <th>FN&darr;</th>
+                <th>IDs&darr;</th>
+                <th>FM&darr;</th>
+                <th>Date</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MDP (Baseline)</td>
+                <td>19.80</td>
+                <td>31.30</td>
+                <td>61.80</td>
+                <td>21.00</td>
+                <td>27.20</td>
+                <td>80.20</td>
+                <td>142</td>
+                <td>621</td>
+                <td>1161</td>
+                <td>17260</td>
+                <td>186580</td>
+                <td>1779</td>
+                <td>2748</td>
+                <td>2021-04-05</td>
+
+              </tr>
+              <tr>
+                <td>DeepSORT (Baseline)</td>
+                <td>14.50</td>
+                <td>24.40</td>
+                <td>67.50</td>
+                <td>14.90</td>
+                <td>18.50</td>
+                <td>84.10</td>
+                <td>72</td>
+                <td>509</td>
+                <td>1363</td>
+                <td>9000</td>
+                <td>208818</td>
+                <td>1315</td>
+                <td>2233</td>
+                <td>2021-04-05</td>
+
+              </tr>
+              <tr>
+                <td>IOU tracker (Baseline)</td>
+                <td>11.80</td>
+                <td>20.30</td>
+                <td>64.60</td>
+                <td>12.00</td>
+                <td>15.40</td>
+                <td>82.60</td>
+                <td>56</td>
+                <td>397</td>
+                <td>1491</td>
+                <td>8299</td>
+                <td>216921</td>
+                <td>754</td>
+                <td>1668</td>
+                <td>2021-04-05</td>
+
+              </tr>
+              <tr>
+                <td>FAMNet (Baseline)</td>
+                <td>18.00</td>
+                <td>28.30</td>
+                <td>54.80</td>
+                <td>19.10</td>
+                <td>26.80</td>
+                <td>76.80</td>
+                <td>166</td>
+                <td>581</td>
+                <td>1197</td>
+                <td>20741</td>
+                <td>187730</td>
+                <td>1660</td>
+                <td>1878</td>
+                <td>2021-04-05</td>
+
+              </tr>
+            </tbody>
+          </table>
           </p>
 
         </div>
@@ -67,6 +212,15 @@
     </div>
   </section>
 
+  <script>
+    $(document).ready(function () {
+      // $('#public_detector').DataTable();
+      $('#public_detector').DataTable( {
+        // set MOTA as default order column.
+        "order": [[ 1, "desc" ]]
+    } );
+    });
+  </script>
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
@@ -81,7 +235,6 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
