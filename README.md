@@ -20,14 +20,15 @@ sample the one target in the 1st frame for the protocol and repeat this procedur
 | [FAMNet](https://openaccess.thecvf.com/content_ICCV_2019/papers/Chu_FAMNet_Joint_Learning_of_Feature_Affinity_and_Multi-Dimensional_Assignment_for_ICCV_2019_paper.pdf) | 17.60%	&plusmn; 0.85%  | 22.56% &plusmn; 0.23%  | 27.76%	&plusmn; 1.16%  | 
 
 ## Citation 
-The proceeding version would be updated when available. You may use the arXiv version for now.
+The proceeding version is shown below. You may check the [arXiv version](https://arxiv.org/abs/2011.11858) for updates.
 
 ```
-@article{bai2020gmot,
+@inproceedings{bai2021gmot,
   title={GMOT-40: A Benchmark for Generic Multiple Object Tracking},
   author={Bai, Hexin and Cheng, Wensheng and Chu, Peng and Liu, Juehuan and Zhang, Kai and Ling, Haibin},
-  journal={arXiv preprint arXiv:2011.11858},
-  year={2020}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={6719--6728},
+  year={2021}
 }
 ```
 
